@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolo Eterno - Cure a Dor do Luto Pet</title>
+    <meta name="description" content="Descubra como silenciar a culpa e transformar a dor do luto pet em conexão eterna.">
+    
+    <!-- Google Fonts: Playfair Display (Serifa Elegante) & Inter (Leitura Limpa) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuração do Design System -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            500: '#10B981', // Verde CTA
+                            600: '#059669', // Verde Hover
+                        },
+                        purple: {
+                            900: '#4C1D95', // Roxo Headlines
+                            200: '#E9D5FF', // Roxo Claro (Bordas/Detalhes)
+                            50: '#FAF5FF',  // Fundo Suave
+                        },
+                        cream: '#FFFBF0', // Fundo Aconchegante
+                        gray: {
+                            800: '#374151', // Texto Chumbo
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Playfair Display"', 'serif'],
+                        sans: ['"Inter"', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-hero': 'linear-gradient(to bottom, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.5) 50%, rgba(0,0,0,0) 100%)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Ajustes Finos */
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        /* Animação Pulsante para CTAs */
+        @keyframes pulse-custom {
+            0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7); transform: scale(1); }
+            70% { box-shadow: 0 0 0 15px rgba(16, 185, 129, 0); transform: scale(1.02); }
+            100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); transform: scale(1); }
+        }
+        .btn-pulse {
+            animation: pulse-custom 2s infinite;
+        }
+
+        /* Animação Pulsante Menor para a Barra Fixa */
+        @keyframes pulse-small {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        .btn-pulse-small {
+            animation: pulse-small 2s infinite;
+        }
+
+        /* Parallax Fix */
+        .parallax-bg {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        /* Mobile Parallax adjustment */
+        @media (max-width: 768px) {
+            .parallax-bg {
+                background-attachment: scroll; /* Melhor performance no mobile */
+            }
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 antialiased bg-white selection:bg-purple-900 selection:text-white pb-16 md:pb-0"> 
+    <!-- Adicionei pb-16 no body para garantir que o rodapé não fique escondido pela barra no mobile -->
+
+    <!-- 1. SEÇÃO HERO (A Mais Importante) -->
+    <header class="relative h-screen min-h-[600px] flex flex-col justify-start pt-32 md:justify-center md:pt-0 md:pb-32 items-center overflow-hidden">
+        
+        <!-- Background Imagem -->
+        <div class="absolute inset-0 z-0">
+            <img src="protocolo-eterno-luto-pet-caminha-vazia.jpg" 
+                 alt="Caminha de cachorro vazia iluminada pelo sol" 
+                 class="w-full h-full object-cover object-bottom"
+                 onerror="this.style.display='none'; document.getElementById('hero-fallback').style.display='block';">
+            <div id="hero-fallback" class="hidden absolute inset-0 bg-gray-900"></div>
+        </div>
+
+        <!-- Overlay Inteligente -->
+        <div class="absolute inset-0 z-10 bg-gradient-hero"></div>
+
+        <!-- Conteúdo -->
+        <div class="relative z-20 container mx-auto px-6 text-center max-w-4xl">
+            
+            <!-- NOVO BOX BRANDING (SIMBAS PET) -->
+            <div class="inline-block bg-black/40 backdrop-blur-md border border-white/10 rounded-lg px-6 md:px-8 py-3 mb-8 shadow-lg transform hover:scale-105 transition-transform duration-300">
+                <div class="flex flex-col items-center">
+                    <span class="text-emerald-400 font-bold tracking-[0.2em] text-sm md:text-base uppercase leading-none mb-1.5 font-sans">SIMBAS PET</span>
+                    <span class="text-gray-200 text-[10px] md:text-xs font-medium tracking-widest uppercase opacity-90">Acolhimento para quem perdeu um pet</span>
+                </div>
+            </div>
+
+            <h1 class="font-serif text-2xl md:text-4xl lg:text-5xl text-white font-bold leading-tight mb-6 drop-shadow-md">
+                Para você que sente a casa silenciosa demais... e que uma parte da sua alma foi embora junto com ele.
+            </h1>
+            
+            <h2 class="text-lg md:text-xl text-gray-200 mb-10 font-light max-w-3xl mx-auto leading-relaxed">
+                Disseram que "era só um animal"? A ciência prova o contrário. Descubra como silenciar a culpa, voltar a dormir e transformar a dor do luto em conexão eterna em 7 dias.
+            </h2>
+
+            <a href="https://pay.kiwify.com.br/tVM1G2F" class="btn-pulse inline-block bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-5 px-10 rounded-full text-lg md:text-xl shadow-lg transition-all duration-300 transform hover:-translate-y-1">
+                QUERO ACALMAR MEU CORAÇÃO ➔
+            </a>
+        </div>
+    </header>
+
+    <!-- 2. SEÇÃO DA CULPA (Validação) -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <!-- Grid 1 coluna mobile, 2 desktop. Imagem primeiro no HTML = Topo no Mobile -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <!-- Imagem (Topo Mobile / Esquerda Desktop) -->
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-purple-100 rounded-full opacity-50 blur-xl"></div>
+                    <img src="superar-culpa-luto-cachorro.jpg" alt="Mulher emocionada segurando coleira" class="relative rounded-2xl shadow-xl w-full h-auto object-cover transform transition hover:scale-[1.01] duration-500">
+                </div>
+
+                <!-- Texto (Baixo Mobile / Direita Desktop) -->
+                <div class="space-y-6">
+                    <h2 class="font-serif text-3xl md:text-4xl text-purple-900 font-bold leading-tight">
+                        No silêncio da madrugada, a culpa visita você?
+                    </h2>
+                    
+                    <p class="text-lg leading-relaxed text-gray-800">
+                        Eu sei o que você pensa: <span class="italic font-serif text-purple-900 font-semibold bg-purple-50 px-1">"E se eu tivesse levado ao veterinário antes?"</span>.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed text-gray-800">
+                        Você está julgando seu "Eu do Passado" com as informações de hoje. Isso é injusto. Essa dor no peito é o peso de uma responsabilidade carregada com amor. <strong class="text-purple-900">Você não precisa carregar isso sozinha.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. SEÇÃO DA CIÊNCIA (Autoridade) -->
+    <section class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <!-- Imagem Flutuante -->
+                <div class="relative inline-block mb-10">
+                    <img src="neurociencia-conexao-humano-pet.jpg" alt="Conexão neural humano e pet" class="rounded-2xl shadow-2xl md:max-w-2xl w-full h-auto border-4 border-white">
+                </div>
+
+                <h2 class="font-serif text-3xl md:text-4xl text-purple-900 font-bold mb-6">
+                    Você não está exagerando. <br>É abstinência real.
+                </h2>
+                
+                <p class="text-lg text-gray-800 mb-10 max-w-2xl mx-auto">
+                    Seu cérebro não sabe a diferença entre perder um pet e um filho. A Ocitocina (hormônio do amor) despencou. Seus sintomas são físicos e reais.
+                </p>
+
+                <!-- Bullets -->
+                <div class="flex flex-col md:flex-row justify-center gap-6 md:gap-10 text-left md:text-center">
+                    <div class="flex items-center md:flex-col bg-white p-4 rounded-xl shadow-sm md:shadow-none md:bg-transparent">
+                        <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mr-4 md:mr-0 md:mb-3 shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <span class="font-semibold text-gray-800">Vínculo Biológico Comprovado</span>
+                    </div>
+                    <div class="flex items-center md:flex-col bg-white p-4 rounded-xl shadow-sm md:shadow-none md:bg-transparent">
+                        <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mr-4 md:mr-0 md:mb-3 shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <span class="font-semibold text-gray-800">Abstinência Química Real</span>
+                    </div>
+                    <div class="flex items-center md:flex-col bg-white p-4 rounded-xl shadow-sm md:shadow-none md:bg-transparent">
+                        <div class="w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mr-4 md:mr-0 md:mb-3 shrink-0">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        </div>
+                        <span class="font-semibold text-gray-800">Validação Neurocientífica</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. SEÇÃO DO MAPA (O Método) -->
+    <section class="py-24 bg-purple-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="max-w-3xl mx-auto mb-12">
+                <h2 class="font-serif text-3xl md:text-5xl font-bold mb-6">
+                    O Caminho Passo a Passo para a Paz
+                </h2>
+                <p class="text-purple-100 text-xl font-light">
+                    Um mapa guiado que te pega pela mão do dia mais triste até a aceitação serena.
+                </p>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto group">
+                <div class="absolute inset-0 bg-yellow-500 opacity-20 blur-3xl rounded-full group-hover:opacity-30 transition duration-700"></div>
+                <img src="jornada-cura-luto-passo-a-passo.jpg" alt="Infográfico Jornada de Cura" class="relative w-full h-auto rounded-xl shadow-2xl border border-purple-700">
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. SEÇÃO DO BÔNUS 1 (O Livro da Vida) -->
+    <section class="py-20 bg-white overflow-hidden border-b border-gray-100">
+        <div class="container mx-auto px-6">
+            <!-- USO DE ORDER:
+                 Mobile (Default): Imagem é 'order-1', Texto é 'order-2'. IMAGEM VEM PRIMEIRO.
+                 Desktop (md): Imagem é 'order-2', Texto é 'order-1'. TEXTO VEM PRIMEIRO (Esquerda). -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- Texto -->
+                <div class="order-2 md:order-1 space-y-6">
+                    <span class="inline-block bg-emerald-100 text-emerald-800 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-2">Bônus Exclusivo (Grátis Hoje)</span>
+                    
+                    <h3 class="font-serif text-3xl text-purple-900 font-bold">
+                        O Livro da Vida (Memorial Físico)
+                    </h3>
+                    
+                    <p class="text-lg text-gray-700 leading-relaxed border-l-4 border-purple-200 pl-6">
+                        O maior medo é esquecer o cheiro ou os detalhes. Com este Workbook, você cria um memorial físico eterno. Transforme a dor na alegria de lembrar.
+                    </p>
+
+                    <ul class="space-y-3 pt-4">
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Exercícios de Gratidão
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <svg class="w-5 h-5 text-emerald-500 mr-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            Espaço para Colagem de Fotos
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Imagem -->
+                <div class="order-1 md:order-2 relative transform md:rotate-2 hover:rotate-0 transition duration-500">
+                    <img src="diario-gratidao-memoria-pet.jpg" alt="Diário memorial pet" class="w-full h-auto rounded-lg shadow-xl border-8 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. NOVA SESSÃO DE BÔNUS (Áudio / Frequência Neural) -->
+    <section class="py-20 bg-purple-50">
+        <div class="container mx-auto px-6">
+            <!-- Grid 1 coluna mobile, 2 desktop. Imagem primeiro no HTML = Topo no Mobile -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                
+                <!-- Imagem (Topo Mobile / Esquerda Desktop) -->
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-white rounded-full opacity-60 blur-xl"></div>
+                    <img src="fones-de-ouvido-meditacao-luto.jpg" 
+                         alt="Fones de ouvido para meditação e sono" 
+                         class="relative w-full h-auto rounded-2xl shadow-2xl border-4 border-white transform md:-rotate-1 hover:rotate-0 transition duration-500">
+                </div>
+
+                <!-- Texto (Baixo Mobile / Direita Desktop) -->
+                <div class="space-y-6">
+                    <span class="inline-block bg-purple-200 text-purple-900 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-2">
+                        Novo Bônus Especial
+                    </span>
+
+                    <h3 class="font-serif text-3xl md:text-4xl text-purple-900 font-bold leading-tight">
+                        Sessões de Áudio: <br>Terapia de Frequência Neural
+                    </h3>
+
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Sabemos que o silêncio da noite costuma ser o momento mais difícil. É quando a mente insiste em reviver memórias e os <strong class="text-purple-900">pensamentos acelerados</strong> parecem não ter fim.
+                    </p>
+
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Projetamos estas frequências neurais para acalmar o sistema nervoso. Basta colocar seus fones ao deitar para reduzir a ansiedade noturna e <span class="underline decoration-emerald-500 decoration-2 underline-offset-2">voltar a dormir</span> com serenidade.
+                    </p>
+                    
+                    <ul class="space-y-4 pt-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mt-0.5">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-gray-900 font-bold">Sono Reparador</h4>
+                                <p class="text-gray-600 text-sm">Induz ondas cerebrais Theta para descanso profundo.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-600 mt-0.5">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="text-gray-900 font-bold">Silêncio Mental</h4>
+                                <p class="text-gray-600 text-sm">Ajuda a parar o ciclo de pensamentos de culpa ao deitar.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. SEÇÃO ESPIRITUAL (Esperança) -->
+    <section class="relative py-40 parallax-bg" style="background-image: url('espiritualidade-animais-reencontro.jpg');">
+        <!-- Overlay Preto Suave -->
+        <div class="absolute inset-0 bg-black/30"></div>
+        
+        <div class="relative container mx-auto px-6 text-center z-10">
+            <h2 class="font-serif text-3xl md:text-5xl text-white italic leading-tight max-w-4xl mx-auto drop-shadow-lg">
+                "O amor nunca morre, ele apenas se transforma. Sinta a presença dele cuidando de você."
+            </h2>
+        </div>
+    </section>
+
+    <!-- 8. SEÇÃO DE OFERTA (Checkout) -->
+    <section id="oferta" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-2xl overflow-hidden border border-gray-100">
+                
+                <!-- Faixa de Escassez -->
+                <div class="bg-gradient-to-r from-purple-900 to-purple-800 py-3 text-center text-white text-sm font-bold uppercase tracking-widest">
+                    Oferta Especial por Tempo Limitado
+                </div>
+
+                <div class="p-8 md:p-16 text-center">
+                    
+                    <!-- Imagem Mockup -->
+                    <div class="flex justify-center mb-10">
+                        <img src="protocolo-eterno-livro-guia-completo.jpg" 
+                             onerror="this.src='protocolo-eterno-livro-guia-completo.png'"
+                             alt="Kit Protocolo Eterno Completo" 
+                             class="w-full max-w-md h-auto hover:scale-105 transition duration-500 drop-shadow-2xl">
+                    </div>
+
+                    <h2 class="font-serif text-4xl text-gray-800 font-bold mb-4">
+                        Protocolo Eterno Completo
+                    </h2>
+                    <p class="text-gray-500 mb-8">+ Bônus Livro da Vida & Áudios Neurais Inclusos</p>
+
+                    <!-- Preço -->
+                    <div class="bg-cream rounded-2xl p-6 mb-8 inline-block w-full max-w-lg border border-orange-100">
+                        <p class="text-gray-400 line-through text-lg mb-1">DE R$ 97,90</p>
+                        <div class="flex items-center justify-center gap-2 text-emerald-600 font-bold leading-none">
+                            <span class="text-xl text-gray-600 font-normal">POR</span>
+                            <span class="text-5xl md:text-6xl tracking-tighter">R$ 37,90</span>
+                        </div>
+                        <p class="text-gray-600 font-medium mt-2 font-bold uppercase">À VISTA OU PARCELADO</p>
+                    </div>
+
+                    <!-- Botão Final -->
+                    <div class="mb-8">
+                        <a href="https://pay.kiwify.com.br/tVM1G2F" class="btn-pulse block w-full max-w-xl mx-auto bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-6 px-8 rounded-xl text-xl md:text-2xl shadow-xl transition-colors duration-300">
+                            SIM, QUERO MINHA PAZ DE VOLTA ➔
+                        </a>
+                    </div>
+
+                    <!-- Garantia -->
+                    <div class="flex flex-col md:flex-row items-center justify-center gap-3 text-gray-500 text-sm">
+                        <svg class="w-6 h-6 text-emerald-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        <span class="font-semibold text-gray-700">Teste por 7 dias. Risco Zero.</span>
+                        <span class="hidden md:inline text-gray-300">|</span>
+                        <span>Se não sentir paz, devolvemos 100%.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Rodapé -->
+            <footer class="text-center mt-16 pb-8 text-gray-400 text-sm">
+                <p>Copyright 2026 - Protocolo Eterno. Todos os direitos reservados.</p>
+            </footer>
+        </div>
+    </section>
+
+    <!-- STICKY CTA BAR -->
+    <div id="sticky-cta" class="fixed bottom-0 left-0 w-full bg-purple-900 text-white z-50 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)] transform translate-y-full transition-transform duration-500 ease-in-out border-t border-purple-800">
+        <div class="container mx-auto px-4 py-3 flex items-center justify-between gap-4">
+            <!-- Texto -->
+            <p class="text-xs md:text-sm font-medium leading-tight max-w-2xl text-purple-100 flex-1">
+                Transforme a Dor do Luto em Saudade Serena em 7 Dias...
+            </p>
+            <!-- Botão -->
+            <a href="https://pay.kiwify.com.br/tVM1G2F" class="bg-emerald-500 hover:bg-emerald-600 text-white text-xs md:text-sm font-bold py-2.5 px-4 md:px-6 rounded-full shadow-lg whitespace-nowrap transition-colors btn-pulse-small shrink-0">
+                QUERO ALÍVIO AGORA ➔
+            </a>
+        </div>
+    </div>
+
+    <!-- Script da Sticky Bar -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const stickyBar = document.getElementById('sticky-cta');
+            
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 300) {
+                    stickyBar.classList.remove('translate-y-full');
+                } else {
+                    stickyBar.classList.add('translate-y-full');
+                }
+            });
+        });
+    </script>
+
+    <!-- Vercel Analytics Injection (Standard for Static Sites) -->
+    <script>
+        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+    </script>
+    <!-- O script abaixo é injetado automaticamente pelo Vercel, mas mantemos o placeholder para boas práticas -->
+    <!-- <script src="/_vercel/insights/script.js"></script> -->
+
+</body>
+</html>
