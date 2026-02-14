@@ -418,13 +418,12 @@
             });
         });
     </script>
-
-    <!-- Vercel Analytics Injection (Standard for Static Sites) -->
+    
+    <!-- Vercel Analytics -->
     <script>
-        window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
+      window.va = window.va || function () { (window.va.q = window.va.q || []).push(arguments); };
     </script>
-    <!-- O script abaixo é injetado automaticamente pelo Vercel, mas mantemos o placeholder para boas práticas -->
-    <!-- <script src="/_vercel/insights/script.js"></script> -->
+    <script src="/_vercel/insights/script.js"></script>
 
 </body>
 </html>
